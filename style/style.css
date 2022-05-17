@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,500;8..144,800&display=swap');
+
 body {
+    background-color: red;
+}
+
+#fontWeightStyle {
+    border: 1px solid black;
+    height: 100px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#fontWeightStyle p {
+    /* font-weight: 500; */
+    font-style: italic;
+}
+
+.repeatedBold {
+    font-weight: 800;
+    color: orange;
+}
+
+#psudeo {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.button {
+
+    border: 1px solid black; 
+}
+
+/* .button:hover {
+    background-color: aquamarine;
+} */
+
+
+/* 2n + 1 */
+.button:nth-last-child(2n + 1) {
+    background-color: blue;
+}
+
+.button:nth-last-child(2n + 1):hover {
+    background-color: pink;
+}
+
+#menu div:nth-child(3n + 1)  {
+    background-color: orange;
+}
+
+
+/* Button */
+.button {
+    border-radius: 5px;
+    box-shadow: -2px 2px 3px black;
+    cursor: pointer;
+}
+
+.button:active {
+    border-radius: 50px;
+    box-shadow: -2px 2px 3px black;
+}
+
+/* When cursor is over something */
+.button:hover {
     background-color: red;
 }
