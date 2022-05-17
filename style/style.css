@@ -42,13 +42,21 @@ body {
     background-color: blue;
 }
 
-.button:nth-last-child(2n + 1):hover {
-    background-color: pink;
-}
+
 
 #menu div:nth-child(3n + 1)  {
     background-color: orange;
 }
+
+#psudeo .button {
+    transition: margin-top 2s ease-in-out;
+}
+
+#psudeo:hover .button {
+    border: 1px solid black;
+    margin-top: 50px
+}
+
 
 
 /* Button */
@@ -56,6 +64,15 @@ body {
     border-radius: 5px;
     box-shadow: -2px 2px 3px black;
     cursor: pointer;
+    color: white;
+    transition: 
+        background-color 2s ease, 
+        color 2s ease-out, 
+        border-radius 2s;
+}
+
+.button:nth-last-child(2n + 1):hover {
+    background-color: pink;
 }
 
 .button:active {
@@ -66,4 +83,5 @@ body {
 /* When cursor is over something */
 .button:hover {
     background-color: red;
+    color: black;
 }
